@@ -1,0 +1,64 @@
+# Arquivos de compilação
+bin/
+obj/
+
+# Arquivos de configuração do Visual Studio
+.vs/
+*.user
+*.suo
+*.cache
+*.dll.refresh
+*.sln.docstates
+
+# Arquivos de saída de depuração
+[Tt]emp/
+[Vv]isual[Ss]tudioTest/
+
+# Arquivos de compilação específicos de IDE
+*.resharper
+_ReSharper*/
+
+# Arquivos de log
+*.log
+
+# Arquivos de saída
+*.dll
+*.exe
+
+# Arquivos de publicação
+publish/
+
+# Arquivos de dependência gerados
+packages/
+
+# Visual Studio code coverage results
+*.coverage
+
+# NCrunch
+*.ncrunch*
+.*crunch*.local.xml
+nCrunchTemp/
+
+# Arquivos de análise e métricas
+*.suo
+*.user
+*.sln.docstates
+*.pdb
+*.opendb
+*.log
+*.sqlite
+*.sqlite3
+*.sdf
+*.opensdf
+*.dbmdl
+
+# Ferramentas de análise de código
+_ReSharper*/
+*.resharper
+*.DotSettings.user
+
+# Arquivos temporários
+*.bak
+*.cache
+*.dbmdl
+*.classDiagram
