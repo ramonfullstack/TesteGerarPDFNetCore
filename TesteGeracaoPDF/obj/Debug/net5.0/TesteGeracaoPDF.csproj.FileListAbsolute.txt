@@ -13,7 +13,6 @@ C:\Repositorios\TesteGeracaoPDF\TesteGeracaoPDF\bin\Debug\net5.0\Microsoft.OpenA
 C:\Repositorios\TesteGeracaoPDF\TesteGeracaoPDF\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Repositorios\TesteGeracaoPDF\TesteGeracaoPDF\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Repositorios\TesteGeracaoPDF\TesteGeracaoPDF\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
-C:\Repositorios\TesteGeracaoPDF\TesteGeracaoPDF\obj\Debug\net5.0\TesteGeracaoPDF.csproj.AssemblyReference.cache
 C:\Repositorios\TesteGeracaoPDF\TesteGeracaoPDF\obj\Debug\net5.0\TesteGeracaoPDF.GeneratedMSBuildEditorConfig.editorconfig
 C:\Repositorios\TesteGeracaoPDF\TesteGeracaoPDF\obj\Debug\net5.0\TesteGeracaoPDF.AssemblyInfoInputs.cache
 C:\Repositorios\TesteGeracaoPDF\TesteGeracaoPDF\obj\Debug\net5.0\TesteGeracaoPDF.AssemblyInfo.cs
