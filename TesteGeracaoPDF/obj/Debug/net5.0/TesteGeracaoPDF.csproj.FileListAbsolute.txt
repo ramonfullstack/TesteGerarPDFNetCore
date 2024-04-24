@@ -5,7 +5,6 @@ C:\Repositorios\TesteGeracaoPDF\TesteGeracaoPDF\bin\Debug\net5.0\TesteGeracaoPDF
 C:\Repositorios\TesteGeracaoPDF\TesteGeracaoPDF\bin\Debug\net5.0\TesteGeracaoPDF.runtimeconfig.json
 C:\Repositorios\TesteGeracaoPDF\TesteGeracaoPDF\bin\Debug\net5.0\TesteGeracaoPDF.runtimeconfig.dev.json
 C:\Repositorios\TesteGeracaoPDF\TesteGeracaoPDF\bin\Debug\net5.0\TesteGeracaoPDF.dll
-C:\Repositorios\TesteGeracaoPDF\TesteGeracaoPDF\bin\Debug\net5.0\ref\TesteGeracaoPDF.dll
 C:\Repositorios\TesteGeracaoPDF\TesteGeracaoPDF\bin\Debug\net5.0\TesteGeracaoPDF.pdb
 C:\Repositorios\TesteGeracaoPDF\TesteGeracaoPDF\bin\Debug\net5.0\BouncyCastle.Crypto.dll
 C:\Repositorios\TesteGeracaoPDF\TesteGeracaoPDF\bin\Debug\net5.0\itextsharp.dll
@@ -20,11 +19,14 @@ C:\Repositorios\TesteGeracaoPDF\TesteGeracaoPDF\obj\Debug\net5.0\TesteGeracaoPDF
 C:\Repositorios\TesteGeracaoPDF\TesteGeracaoPDF\obj\Debug\net5.0\TesteGeracaoPDF.MvcApplicationPartsAssemblyInfo.cs
 C:\Repositorios\TesteGeracaoPDF\TesteGeracaoPDF\obj\Debug\net5.0\TesteGeracaoPDF.MvcApplicationPartsAssemblyInfo.cache
 C:\Repositorios\TesteGeracaoPDF\TesteGeracaoPDF\obj\Debug\net5.0\staticwebassets\TesteGeracaoPDF.StaticWebAssets.Manifest.cache
-C:\Repositorios\TesteGeracaoPDF\TesteGeracaoPDF\obj\Debug\net5.0\staticwebassets\TesteGeracaoPDF.StaticWebAssets.xml
 C:\Repositorios\TesteGeracaoPDF\TesteGeracaoPDF\obj\Debug\net5.0\scopedcss\bundle\TesteGeracaoPDF.styles.css
 C:\Repositorios\TesteGeracaoPDF\TesteGeracaoPDF\obj\Debug\net5.0\TesteGeracaoPDF.RazorTargetAssemblyInfo.cache
-C:\Repositorios\TesteGeracaoPDF\TesteGeracaoPDF\obj\Debug\net5.0\TesteGeracaoPDF.csproj.CopyComplete
 C:\Repositorios\TesteGeracaoPDF\TesteGeracaoPDF\obj\Debug\net5.0\TesteGeracaoPDF.dll
 C:\Repositorios\TesteGeracaoPDF\TesteGeracaoPDF\obj\Debug\net5.0\ref\TesteGeracaoPDF.dll
 C:\Repositorios\TesteGeracaoPDF\TesteGeracaoPDF\obj\Debug\net5.0\TesteGeracaoPDF.pdb
 C:\Repositorios\TesteGeracaoPDF\TesteGeracaoPDF\obj\Debug\net5.0\TesteGeracaoPDF.genruntimeconfig.cache
+C:\Repositorios\TesteGeracaoPDF\TesteGeracaoPDF\obj\Debug\net5.0\TesteGeracaoPDF.csproj.AssemblyReference.cache
+C:\Repositorios\TesteGeracaoPDF\TesteGeracaoPDF\bin\Debug\net5.0\ref\TesteGeracaoPDF.dll
+C:\Repositorios\TesteGeracaoPDF\TesteGeracaoPDF\obj\Debug\net5.0\staticwebassets\TesteGeracaoPDF.StaticWebAssets.xml
+C:\Repositorios\TesteGeracaoPDF\TesteGeracaoPDF\obj\Debug\net5.0\TesteGeracaoPDF.csproj.CopyComplete
+C:\Repositorios\TesteGeracaoPDF\TesteGeracaoPDF\bin\Debug\net5.0\System.Drawing.Common.dll

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Ng+xU7YDl7f4bBcmoJorSK7p3hYEG0hkbW9nxQtr9rWxTBZ5XrOrpqO3VB/YVlcjGhey+LJ3fO/6vZpKOQA/eQ==",
+  "dgSpecHash": "BFzul9MMOCIJ+EUNwShwmgT2bW/AMU5Eopzd5hsgeuRMiTrfKPITY702t+2DkcruaL8sd4zoZG1zKBEpu630RQ==",
   "success": true,
   "projectFilePath": "C:\\Repositorios\\TesteGeracaoPDF\\TesteGeracaoPDF\\TesteGeracaoPDF.csproj",
   "expectedPackageFiles": [
@@ -11,7 +11,8 @@
     "C:\\Users\\SantosRS1\\.nuget\\packages\\swashbuckle.aspnetcore\\6.5.0\\swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
     "C:\\Users\\SantosRS1\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.5.0\\swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
     "C:\\Users\\SantosRS1\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.5.0\\swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",
-    "C:\\Users\\SantosRS1\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.5.0\\swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512"
+    "C:\\Users\\SantosRS1\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.5.0\\swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512",
+    "C:\\Users\\SantosRS1\\.nuget\\packages\\system.drawing.common\\8.0.4\\system.drawing.common.8.0.4.nupkg.sha512"
   ],
   "logs": [
     {
