@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Repositorios\\TesteGeracaoPDF\\TesteGeracaoPDF\\TesteGeracaoPDF.csproj": {}
+    "E:\\Repositorios Github\\TesteGerarPDFNetCore\\TesteGeracaoPDF\\TesteGeracaoPDF.csproj": {}
   },
   "projects": {
-    "C:\\Repositorios\\TesteGeracaoPDF\\TesteGeracaoPDF\\TesteGeracaoPDF.csproj": {
+    "E:\\Repositorios Github\\TesteGerarPDFNetCore\\TesteGeracaoPDF\\TesteGeracaoPDF.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Repositorios\\TesteGeracaoPDF\\TesteGeracaoPDF\\TesteGeracaoPDF.csproj",
+        "projectUniqueName": "E:\\Repositorios Github\\TesteGerarPDFNetCore\\TesteGeracaoPDF\\TesteGeracaoPDF.csproj",
         "projectName": "TesteGeracaoPDF",
-        "projectPath": "C:\\Repositorios\\TesteGeracaoPDF\\TesteGeracaoPDF\\TesteGeracaoPDF.csproj",
-        "packagesPath": "C:\\Users\\SantosRS1\\.nuget\\packages\\",
-        "outputPath": "C:\\Repositorios\\TesteGeracaoPDF\\TesteGeracaoPDF\\obj\\",
+        "projectPath": "E:\\Repositorios Github\\TesteGerarPDFNetCore\\TesteGeracaoPDF\\TesteGeracaoPDF.csproj",
+        "packagesPath": "C:\\Users\\RAMON\\.nuget\\packages\\",
+        "outputPath": "E:\\Repositorios Github\\TesteGerarPDFNetCore\\TesteGeracaoPDF\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\SantosRS1\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\RAMON\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -85,7 +81,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     }
