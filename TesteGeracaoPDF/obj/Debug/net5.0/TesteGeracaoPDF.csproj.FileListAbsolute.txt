@@ -26,7 +26,13 @@ C:\Repositorios\TesteGeracaoPDF\TesteGeracaoPDF\obj\Debug\net5.0\ref\TesteGeraca
 C:\Repositorios\TesteGeracaoPDF\TesteGeracaoPDF\obj\Debug\net5.0\TesteGeracaoPDF.pdb
 C:\Repositorios\TesteGeracaoPDF\TesteGeracaoPDF\obj\Debug\net5.0\TesteGeracaoPDF.genruntimeconfig.cache
 C:\Repositorios\TesteGeracaoPDF\TesteGeracaoPDF\obj\Debug\net5.0\TesteGeracaoPDF.csproj.AssemblyReference.cache
-C:\Repositorios\TesteGeracaoPDF\TesteGeracaoPDF\bin\Debug\net5.0\ref\TesteGeracaoPDF.dll
-C:\Repositorios\TesteGeracaoPDF\TesteGeracaoPDF\obj\Debug\net5.0\staticwebassets\TesteGeracaoPDF.StaticWebAssets.xml
-C:\Repositorios\TesteGeracaoPDF\TesteGeracaoPDF\obj\Debug\net5.0\TesteGeracaoPDF.csproj.CopyComplete
 C:\Repositorios\TesteGeracaoPDF\TesteGeracaoPDF\bin\Debug\net5.0\System.Drawing.Common.dll
+C:\Repositorios\TesteGeracaoPDF\TesteGeracaoPDF\obj\Debug\net5.0\TesteGeracaoPDF.sourcelink.json
+C:\Repositorios\TesteGeracaoPDF\TesteGeracaoPDF\obj\Debug\net5.0\staticwebassets\TesteGeracaoPDF.StaticWebAssets.Pack.cache
+C:\Repositorios\TesteGeracaoPDF\TesteGeracaoPDF\obj\Debug\net5.0\staticwebassets\msbuild.TesteGeracaoPDF.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Repositorios\TesteGeracaoPDF\TesteGeracaoPDF\obj\Debug\net5.0\staticwebassets\msbuild.build.TesteGeracaoPDF.props
+C:\Repositorios\TesteGeracaoPDF\TesteGeracaoPDF\obj\Debug\net5.0\staticwebassets\msbuild.buildMultiTargeting.TesteGeracaoPDF.props
+C:\Repositorios\TesteGeracaoPDF\TesteGeracaoPDF\obj\Debug\net5.0\staticwebassets\msbuild.buildTransitive.TesteGeracaoPDF.props
+C:\Repositorios\TesteGeracaoPDF\TesteGeracaoPDF\obj\Debug\net5.0\TesteGer.5E8067B6.Up2Date
+C:\Repositorios\TesteGeracaoPDF\TesteGeracaoPDF\obj\Debug\net5.0\refint\TesteGeracaoPDF.dll
+C:\Repositorios\TesteGeracaoPDF\TesteGeracaoPDF\bin\Debug\net5.0\ReportingServices.dll

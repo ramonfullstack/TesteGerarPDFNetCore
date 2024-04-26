@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using TesteGeracaoPDF.Servicos;
 
 namespace TesteGeracaoPDF.Controllers
 {
@@ -22,10 +23,23 @@ namespace TesteGeracaoPDF.Controllers
         }
 
         [HttpGet]
-        public IActionResult GetPDF()
-        {
+        public async Task<IActionResult> GetPDFAsync(string reportName = "EOP/EOP0004",
+            string format = "PDF",
+            string codCliente = "1015699",
+            string dataReferencia = "2024-04-24",
+            string parcelasAberto = "N",
+            string parcelasAbertoLiq = "N")
+        { 
             var pdfService = new GeracaoPDFService();
-            byte[] pdfBytes = pdfService.GerarPDF();
+
+            byte[] pdfBytes = await pdfService.GerarPDFReportServiceAsync(
+                reportName, 
+                format, 
+                codCliente, 
+                dataReferencia, 
+                parcelasAberto, 
+                parcelasAbertoLiq);
+
             return File(pdfBytes, "application/pdf", "meu_arquivo.pdf");
         }
 

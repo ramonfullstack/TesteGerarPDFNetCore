@@ -33,6 +33,7 @@
     ".NETCoreApp,Version=v5.0": {
       "TesteGeracaoPDF/1.0.0": {
         "dependencies": {
+          "ReportingServices2010": "1.0.0",
           "Swashbuckle.AspNetCore": "6.5.0",
           "System.Drawing.Common": "8.0.4",
           "iTextSharp": "5.5.13.3",
@@ -362,6 +363,17 @@
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.OpenApi.dll": {}
+        }
+      },
+      "ReportingServices2010/1.0.0": {
+        "runtime": {
+          "lib/net452/ReportingServices.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        },
+        "compile": {
+          "lib/net452/ReportingServices.dll": {}
         }
       },
       "Swashbuckle.AspNetCore/6.5.0": {
@@ -2155,6 +2167,13 @@
       "sha512": "sha512-Nug3rO+7Kl5/SBAadzSMAVgqDlfGjJZ0GenQrLywJ84XGKO0uRqkunz5Wyl0SDwcR71bAATXvSdbdzPrYRYKGw==",
       "path": "microsoft.openapi/1.2.3",
       "hashPath": "microsoft.openapi.1.2.3.nupkg.sha512"
+    },
+    "ReportingServices2010/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-TsIIQ/Iy6ty83VTI629sE3Ekv7c8kddE8q3HWEyR9Or3Fgu/qq4jE78pLF5TQaEbqFIr/wFwgRPUp0KZJidb7Q==",
+      "path": "reportingservices2010/1.0.0",
+      "hashPath": "reportingservices2010.1.0.0.nupkg.sha512"
     },
     "Swashbuckle.AspNetCore/6.5.0": {
       "type": "package",

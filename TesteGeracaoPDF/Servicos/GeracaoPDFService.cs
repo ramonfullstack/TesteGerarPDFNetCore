@@ -2,6 +2,8 @@
 using iTextSharp.text.pdf;
 using System;
 using System.IO;
+using System.Threading.Tasks;
+using TesteGeracaoPDF.Servicos;
 
 namespace TesteGeracaoPDF
 {
@@ -16,6 +18,40 @@ namespace TesteGeracaoPDF
 
             doc.Open();
             doc.Add(new Paragraph("Conteúdo do PDF"));
+
+            doc.Close();
+            writer.Close();
+
+            return ms.ToArray();
+        }
+
+        public async Task<byte[]> GerarPDFReportServiceAsync(string reportName = "EOP/EOP0004",
+            string format = "PDF",
+            string codCliente = "1015699",
+            string dataReferencia = "2024-04-24",
+            string parcelasAberto = "N",
+            string parcelasAbertoLiq = "N")
+        {
+           
+            await ReportServicePDF.GerarReportServiceAsync(reportName,
+             format,
+             codCliente,    
+             dataReferencia,
+             parcelasAberto,
+             parcelasAbertoLiq);
+
+            // Criar um novo documento PDF
+            Document doc = new Document();
+            MemoryStream ms = new MemoryStream();
+            PdfWriter writer = PdfWriter.GetInstance(doc, ms);
+
+            doc.Open();
+            doc.Add(new Paragraph("Conteúdo do PDF"));
+            doc.Add(new Paragraph("TESTE 1"));
+            doc.Add(new Paragraph("TESTE 2"));
+            doc.Add(new Paragraph("TESTE 3"));
+            doc.Add(new Paragraph("TESTE 4"));
+
 
             doc.Close();
             writer.Close();
