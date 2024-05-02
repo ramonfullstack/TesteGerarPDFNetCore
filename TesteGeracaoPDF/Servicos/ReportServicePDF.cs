@@ -28,7 +28,7 @@ namespace TesteGeracaoPDF.Servicos
             // Configurações de autenticação
             string username = "rabodevam\\SantosRS1";
             string password = "0UA+^~0VO2ywhv";
-            //string domain = "seu_domínio"; // Se estiver usando autenticação Windows
+            //string domain = "seu_domínio"; // Se estiver usando autenticação Windowstffg
 
             // Criar uma instância do HttpClient
             using (var httpClient = new HttpClient())
