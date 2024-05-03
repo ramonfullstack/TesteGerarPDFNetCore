@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = TesteGeracaoPDF
-build_property.ProjectDir = E:\Repositorios Github\TesteGerarPDFNetCore\TesteGeracaoPDF\
+build_property.ProjectDir = C:\Repositorios\TesteGeracaoPDF\TesteGeracaoPDF\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

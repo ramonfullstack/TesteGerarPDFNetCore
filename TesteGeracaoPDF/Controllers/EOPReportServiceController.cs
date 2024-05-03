@@ -10,6 +10,7 @@ using System.Net.Http;
 using System.Net;
 using System.Threading.Tasks;
 using TesteGeracaoPDF.Servicos;
+using System.Text;
 
 namespace TesteGeracaoPDF.Controllers
 {
@@ -25,57 +26,82 @@ namespace TesteGeracaoPDF.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetPDFAsync()
+        public async Task<IActionResult> GetPDFAsync(
+            string codCliente = "6785",
+            string dataReferencia = "2023-11-22",
+            string parcelasAberto = "N",
+            string parcelasAbertoLiq = "N",
+            string capaDaCarta = "N",
+            string temOperacoes = "N")
         {
-            // URL da API
-            string apiUrl = "https://sqlrpsdev01.am.rabodev.com/ReportServer_RPS_DEV_01?%2fEOP%2fEOP0004&rs:Format=PDF&CodCliente=6785&DataReferencia=2023-11-22&ParcelasAberto=N&ParcelasAbertoLiq=N";
-
-            // Credenciais para autenticação NTLM
-            var credentials = new NetworkCredential("santosrs1", "0UA+^~0VO2ywhv", "rabodevam");
-
-            // Configuração do HttpClientHandler com autenticação NTLM
-            var handler = new HttpClientHandler()
+            try
             {
-                Credentials = credentials,
-                UseDefaultCredentials = false
-            };
+                string relatorioReport;
+                HttpClientHandler handler = GenerateHandlerAuth();
+                if (capaDaCarta.Equals("S"))
+                    if (temOperacoes.Equals("S"))
+                        relatorioReport = "EOP00040";
+                    else
+                        relatorioReport = "EOP00039";
+                else
+                    relatorioReport = "EOP0004";
 
-            // Criação do HttpClient com o HttpClientHandler configurado
-            using (var httpClient = new HttpClient(handler))
-            {
-                try
+                string apiUrl = $"https://sqlrpsdev01.am.rabodev.com/ReportServer_RPS_DEV_01?%2fEOP%2f{relatorioReport}&rs:Format=PDF";
+                apiUrl += $"&CodCliente={codCliente}&DataReferencia={dataReferencia}&ParcelasAberto={parcelasAberto}&ParcelasAbertoLiq={parcelasAbertoLiq}";
+
+                //string apiUrl = "https://sqlrpsdev01.am.rabodev.com/ReportServer_RPS_DEV_01?%2fEOP%2fEOP0004&rs:Format=PDF&CodCliente=6785&DataReferencia=2023-11-22&ParcelasAberto=N&ParcelasAbertoLiq=N";
+
+
+                string contentResponse = string.Empty;
+
+                using (var httpClient = new HttpClient(handler))
                 {
-                    // Faz a requisição GET para a API
+
                     HttpResponseMessage response = await httpClient.GetAsync(apiUrl);
 
-                    // Verifica se a requisição foi bem-sucedida (código de status 200)
                     if (response.IsSuccessStatusCode)
                     {
-                        // Se sim, pode processar a resposta aqui
                         Console.WriteLine("Requisição bem-sucedida!");
-                        // Exemplo: Ler o conteúdo da resposta
-                        string content = await response.Content.ReadAsStringAsync();
-                        Console.WriteLine(content);
+
+                        var pdfStream = await response.Content.ReadAsStreamAsync();
+                        return new FileStreamResult(pdfStream, "application/pdf");
+
+                        //var filePath = Path.Combine(Path.GetTempPath(), "EOP_ReportService.pdf");
+                        //using (var fileStream = new FileStream(filePath, FileMode.Create, FileAccess.Write))
+                        //{
+                        //    await pdfStream.CopyToAsync(fileStream);
+                        //}
+
+                        //return File(filePath, "application/pdf", "EOP_ReportService.pdf");
                     }
                     else
                     {
                         // Se não, trata o erro de acordo com o código de status
                         Console.WriteLine($"Erro: {response.StatusCode}");
+                        return StatusCode((int)response.StatusCode);
                     }
                 }
-                catch (Exception ex)
-                {
-                    Console.WriteLine($"Erro: {ex.Message}");
-                }
+
+                //var pdfBytes = Encoding.UTF8.GetBytes(contentResponse);
+                //return File(pdfBytes, "application/pdf", "EOP_ReportService.pdf");
             }
-
-
-            var pdfBytes = new byte[] { };
-            return File(pdfBytes, "application/pdf", "meu_arquivo.pdf");
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Erro: {ex.Message}");
+                return StatusCode(500); // Internal Server Error
+            }
         }
 
-       
+        private static HttpClientHandler GenerateHandlerAuth()
+        {
+            var credentials = new NetworkCredential("santosrs1", "0UA+^~0VO2ywhv", "rabodevam");
 
-      
+            var handler = new HttpClientHandler()
+            {
+                Credentials = credentials,
+                UseDefaultCredentials = false
+            };
+            return handler;
+        }
     }
 }
