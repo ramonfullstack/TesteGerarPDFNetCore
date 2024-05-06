@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TesteGeracaoPDF")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+35a1fd0b1847e3a96d79d40227361a612e38988f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a7af617fdef5ae1982ce74c373d55db14b621c2e")]
 [assembly: System.Reflection.AssemblyProductAttribute("TesteGeracaoPDF")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TesteGeracaoPDF")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

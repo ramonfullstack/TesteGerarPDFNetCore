@@ -11,6 +11,7 @@ using System.Net;
 using System.Threading.Tasks;
 using TesteGeracaoPDF.Servicos;
 using System.Text;
+using TesteGeracaoPDF.Models;
 
 namespace TesteGeracaoPDF.Controllers
 {
@@ -27,19 +28,14 @@ namespace TesteGeracaoPDF.Controllers
 
         [HttpGet]
         public async Task<IActionResult> GetPDFAsync(
-            string codCliente = "6785",
-            string dataReferencia = "2023-11-22",
-            string parcelasAberto = "N",
-            string parcelasAbertoLiq = "N",
-            string capaDaCarta = "N",
-            string temOperacoes = "N")
+            GetPdfModel model)
         {
             try
             {
                 string relatorioReport;
                 HttpClientHandler handler = GenerateHandlerAuth();
-                if (capaDaCarta.Equals("S"))
-                    if (temOperacoes.Equals("S"))
+                if (model.CapaDaCarta.Equals("S"))
+                    if (model.TemOperacoes.Equals("S"))
                         relatorioReport = "EOP00040";
                     else
                         relatorioReport = "EOP00039";
@@ -47,7 +43,10 @@ namespace TesteGeracaoPDF.Controllers
                     relatorioReport = "EOP0004";
 
                 string apiUrl = $"https://sqlrpsdev01.am.rabodev.com/ReportServer_RPS_DEV_01?%2fEOP%2f{relatorioReport}&rs:Format=PDF";
-                apiUrl += $"&CodCliente={codCliente}&DataReferencia={dataReferencia}&ParcelasAberto={parcelasAberto}&ParcelasAbertoLiq={parcelasAbertoLiq}";
+                apiUrl += $"&CodCliente={model.CodigoCliente}" +
+                    $"&DataReferencia={model.dataReferencia}" +
+                    $"&ParcelasAberto={model.ParcelasAberto}" +
+                    $"&ParcelasAbertoLiq={model.parcelasAbertoLiq}";
 
                 //string apiUrl = "https://sqlrpsdev01.am.rabodev.com/ReportServer_RPS_DEV_01?%2fEOP%2fEOP0004&rs:Format=PDF&CodCliente=6785&DataReferencia=2023-11-22&ParcelasAberto=N&ParcelasAbertoLiq=N";
 
